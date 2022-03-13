@@ -2,8 +2,8 @@
 
 let base = prompt("bir taban değeri giriniz")
 let height = prompt("lütfen yükseklik giriniz")
-let area = 0.5 * height * base
-console.log("üçgenin alanı:", area);
+let area1 = 0.5 * height * base
+console.log("üçgenin alanı:", area1);
 
 /* *************************************************************************************** */
 
@@ -12,8 +12,8 @@ console.log("üçgenin alanı:", area);
 let a = parseInt(prompt("1. kenarı giriniz"))
 let b = parseInt(prompt("2. kenarı giriniz"))
 let c = parseInt(prompt("3. kenarı giriniz"))
-let perimeter = a + b + c
-console.log("üçgenin çevresi:", perimeter);
+let perimeter1 = a + b + c
+console.log("üçgenin çevresi:", perimeter1);
 
 /* *************************************************************************************** */
 
@@ -21,10 +21,10 @@ console.log("üçgenin çevresi:", perimeter);
 
 let length = parseInt(prompt("lütfen yükseklik giriniz"))
 let width = parseInt(prompt("lütfen genişlik giriniz"))
-let perimeter = 2 * (length + width)
-let area = length * width
-console.log("dikdörtgenin alanı:", area);
-console.log("dikdörtgenin çevresi:", perimeter);
+let perimeter2 = 2 * (length + width)
+let area2 = length * width
+console.log("dikdörtgenin alanı:", area2);
+console.log("dikdörtgenin çevresi:", perimeter2);
 
 /* *************************************************************************************** */
 
@@ -32,10 +32,10 @@ console.log("dikdörtgenin çevresi:", perimeter);
 
 let radius = parseInt(prompt("lütfen yarıçap giriniz"))
 let pi = 3.14
-let area = pi * radius * radius
+let area3 = pi * radius * radius
 let circumference = 2 * radius * pi
 console.log("dairenin çevresi:", circumference);
-console.log("dairenin alanı:", area);
+console.log("dairenin alanı:", area3);
 
 /* *************************************************************************************** */
 
@@ -66,10 +66,10 @@ myAge > yourAge ? console.log(`I am ${difference} years older than you.`) : cons
 
 // Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years. //
 
-const date = new Date()
+const date1 = new Date()
 
 let birthDay = parseInt(prompt("doğduğunuz yılı giriniz"))
-let age = date.getFullYear() - birthDay
+let age = date1.getFullYear() - birthDay
 let fark = 18 - age
 age >= 18 ? console.log(`You are ${age}. You are old enough to drive`) : console.log(`You are ${age}. You will be allowed to drive after ${fark} years.`)
 
@@ -77,35 +77,20 @@ age >= 18 ? console.log(`You are ${age}. You are old enough to drive`) : console
 
 // Create a human readable time format using the Date time object
 
-const date = new Date()
+const date2 = new Date()
 
-let year = date.getFullYear()
-let month = date.getMonth()
-let day = date.getDate()
-let hours = date.getHours()
-let minutes = date.getMinutes()
+let year1 = date2.getFullYear()
+let month1 = date2.getMonth()
+let day1 = date2.getDate()
+let hours1 = date2.getHours()
+let minutes1 = date2.getMinutes()
 
-let humanReadableDate1 = `tarih 1: ${year}-${month}-${day} ${hours}:${minutes}`
-let humanReadableDate2 = `tarih 2: ${day}-${month}-${year} ${hours}:${minutes}`
-let humanReadableDate3 = `tarih 3: ${day}/${month}/${year} ${hours}:${minutes}`
+let humanReadableDate1 = `tarih 1: ${year1}-${month1}-${day1} ${hours1}:${minutes1}`
+let humanReadableDate2 = `tarih 2: ${day1}-${month1}-${year1} ${hours1}:${minutes1}`
+let humanReadableDate3 = `tarih 3: ${day1}/${month1}/${year1} ${hours1}:${minutes1}`
 
 console.log(humanReadableDate1);
 console.log(humanReadableDate2);
 console.log(humanReadableDate3);
-
-/* *************************************************************************************** */
-
-// Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
-// YYY-MM-DD HH:mm eg. 2020-01-02 07:05
-
-const date = new Date()
-
-let year = date.getFullYear()
-let month = date.getMonth() + 1
-let day = date.getDate()
-let hours = date.getHours()
-let minutes = date.getMinutes()
-
-let humanReadableDate = console.log(`${year}-${month}-${day} ${hours}:${minutes}`)
 
 /* *************************************************************************************** */
