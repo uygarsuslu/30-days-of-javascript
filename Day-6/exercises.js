@@ -114,13 +114,10 @@ console.log("ülkelerin ilk 3 harfi:", newCountries1)
 /* *************************************************************************************** */
 
 // ****** 'land' kelimesini içeren bir ülke veya ülkeler olup olmadığını kontrol edin ****** //
-let countWithoutLand = []
 let countWithLand = []
 for (let i = 0; i < countries.length; i++) {
     if (countries[i].includes("LAND")) {
         countWithLand.push(countries[i]);
-    } else {
-        countWithoutLand.push(countries[i])
     }
 }
 console.log("land içeren ülkeler:", countWithLand);
@@ -128,20 +125,18 @@ console.log("land içeren ülkeler:", countWithLand);
 
 // ****** 'ia' ile biten bir ülke veya ülkeler olup olmadığını kontrol edin ****** //
 let countWithIa = []
-let countWithoutIa = []
 for (let i = 0; i < countries.length; i++) {
     if (countries[i].includes("IA")) {
         countWithIa.push(countries[i]);
-    } else {
-        countWithoutIa.push(countries[i])
     }
 }
 console.log("ia ile biten ülkeler:", countWithIa);
 /* *************************************************************************************** */
 
+// apply: bir dizi veriyi bir işleve parametre olarak iletmenin uygun bir yolu //
+
 // ****** yukarıdaki ülkeler dizisini kullanarak en fazla karakter içeren ülkeyi bulun ****** //
-let highest;
-highestNum = Math.max.apply(null, countriesCharLength);
+highestNum = Math.max.apply(null, countriesCharLength); // 8
 console.log("en uzun ülke ismi:", countries[countriesCharLength.indexOf(highestNum)]);
 /* *************************************************************************************** */
 
@@ -163,7 +158,7 @@ for (let i = 0; i < webTechs.length; i++) {
     webTechsLength.push(webTechs[i].length);
 }
 let highestChar;
-highestChar = Math.max.apply(null, webTechsLength);
+highestChar = Math.max.apply(null, webTechsLength); // 10
 console.log("en uzun kelime:", webTechs[webTechsLength.indexOf(highestChar)]);
 /* *************************************************************************************** */
 
@@ -184,7 +179,7 @@ for (let i = 0; i < mernStack.length; i++) {
 console.log("baş harfleri:", mern)
 /* *************************************************************************************** */
 
-// ****** dizinin tüm öğelerini aşağıda gösterildiği gibi yazdırın ****** //
+// ****** dizinin tüm öğelerini yazdırın ****** //
 let techs = ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"]
 for (let i = 0; i < techs.length; i++) {
     console.log("dizi:", techs[i])
