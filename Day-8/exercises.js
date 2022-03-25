@@ -148,6 +148,8 @@ let personAccount = {
 console.log(personAccount);
 /* *************************************************************************************** */
 
+// ****** 2- Imagine you are getting the above users collection from a MongoDB database. a. Create a function called signUp which allows user to add to the collection. If user exists, inform the user that he has already an account. b.Create a function called signIn which allows user to sign in to the application ****** //
+
 const user1 = [
     {
         _id: 'ab12ex',
@@ -192,8 +194,6 @@ const user1 = [
 ];
 /* *************************************************************************************** */
 
-// ****** 2- Imagine you are getting the above users collection from a MongoDB database. a. Create a function called signUp which allows user to add to the collection. If user exists, inform the user that he has already an account. b.Create a function called signIn which allows user to sign in to the application ****** //
-
 const signUp = (username, email, password) => {
     user1.forEach(user => {
         if (user.username === username && user.password === password) {
@@ -218,7 +218,7 @@ const signUp = (username, email, password) => {
     })
     console.log(user1[user1.length - 1]);
 }
-console.log(signUp("Brook", 'brook@brook.com', '123222'));
+// console.log(signUp("Brook", 'brook@brook.com', '123222'));
 
 const signIn = (username, password) => {
     for (let i = 0; i < user1.length; i++) {
@@ -230,10 +230,12 @@ const signIn = (username, password) => {
     }
     console.log(foundUser)
 }
-console.log(signIn("Brook", '123222'));
+// console.log(signIn("Brook", '123222'));
 /* *************************************************************************************** */
 
-const product = [
+// ****** 3- The product array has three elements and each of them has six properties. a. Create a function called rateProduct which rates the product b. Create a function called averageRating which calculate the average rating of a product ****** //
+
+const products = [
     {
         _id: 'eedfcf',
         name: 'mobile phone',
@@ -262,7 +264,66 @@ const product = [
         likes: ['fg12cy']
     }
 ]
-
 /* *************************************************************************************** */
 
-// ****** 3- The product array has three elements and each of them has six properties. a. Create a function called rateProduct which rates the product b. Create a function called averageRating which calculate the average rating of a product ****** //
+const rateProduct = (name, rate) => {
+    products.forEach(product => {
+        if (product.name.toLowerCase().includes(name)) {
+            let chars = "0123456789abcdefghiklmnopqrstuvwxyz";
+            let id = [];
+            for (let i = 0; i < 6; i++) {
+                id.push(chars[Math.floor(Math.random() * chars.length)])
+            }
+            id = id.join("");
+            product.ratings.push({
+                userId: id,
+                rate: rate
+            })
+            console.log("filter");
+        } else {
+            console.log("no product to rate")
+        }
+    })
+};
+
+const avgRating = (name) => {
+    let avg = 0;
+    let count = 0;
+    for (let i = 0; i < products.length; i++) {
+        if (name.toLowerCase() === products[i].name.toLowerCase()) {
+            products[i].ratings.rate.forEach(rating => {
+                count++
+                avg += rating
+            })
+        }
+    }
+    avg = avg / count
+}
+/* *************************************************************************************** */
+
+// ****** 4- Create a function called likeProduct. This function will helps to like to the product if it is not liked and remove like if it was liked ****** //
+
+const likeProduct = (name) => {
+    for (let i = 0; i < products.length; i++) {
+        if (name.toLowerCase() === products[i].name.toLowerCase()) {
+
+            if (!products[i].likes) {
+                console.log(like);
+                let chars = "0123456789abcdefghiklmnopqrstuvwxyz";
+                let id = [];
+                for (let i = 0; i < 6; i++) {
+                    id.push(chars[Math.floor(Math.random() * chars.length)])
+                }
+                id = id.join("");
+                products[i].likes.push(id)
+            } else {
+                console.log("product has been liked")
+            }
+        } else {
+            console.log("no product available")
+        }
+    }
+}
+rateProduct("tv", "4.5");
+avgRating("mobile phone");
+likeProduct("mobile phone");
