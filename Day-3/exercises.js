@@ -6,6 +6,7 @@ let area1 = 0.5 * height * base
 console.log("üçgenin alanı:", area1);
 
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // Write a script that prompt the user to enter side a, side b, and side c of the triangle and and calculate the perimeter of triangle (perimeter = a + b + c) //
 
@@ -16,6 +17,7 @@ let perimeter1 = a + b + c
 console.log("üçgenin çevresi:", perimeter1);
 
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 //Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width)) //
 
@@ -27,6 +29,7 @@ console.log("dikdörtgenin alanı:", area2);
 console.log("dikdörtgenin çevresi:", perimeter2);
 
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14. //
 
@@ -38,6 +41,7 @@ console.log("dairenin çevresi:", circumference);
 console.log("dairenin alanı:", area3);
 
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // If the length of your name is greater than 7 say, your name is long else say your name is short. //
 
@@ -45,6 +49,7 @@ let name = "Uygar"
 name.length > 7 ? console.log("adınız uzun") : console.log("adınız kısa")
 
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // Compare your first name length and your family name length and you should get this output. //
 
@@ -54,6 +59,7 @@ let lastName = "Süslü"
 firstName.length > lastName.length ? console.log(`Your first name, ${firstName} is longer than your last name, ${lastName}`) : console.log(`Your first name, ${firstName} is shorter than your last name, ${lastName}`)
 
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // Declare two variables myAge and yourAge and assign them initial values and myAge and yourAge. //
 
@@ -63,6 +69,7 @@ let difference = Math.abs(myAge - yourAge)
 myAge > yourAge ? console.log(`I am ${difference} years older than you.`) : console.log(`I am ${difference} years younger than you.`)
 
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years. //
 
@@ -74,6 +81,7 @@ let fark = 18 - age
 age >= 18 ? console.log(`You are ${age}. You are old enough to drive`) : console.log(`You are ${age}. You will be allowed to drive after ${fark} years.`)
 
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // Create a human readable time format using the Date time object
 
