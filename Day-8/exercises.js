@@ -266,40 +266,41 @@ const products = [
 ]
 /* *************************************************************************************** */
 
-const rateProduct = (name, rate) => {
-    products.forEach(product => {
-        if (product.name.toLowerCase().includes(name)) {
-            let chars = "0123456789abcdefghiklmnopqrstuvwxyz";
-            let id = [];
-            for (let i = 0; i < 6; i++) {
-                id.push(chars[Math.floor(Math.random() * chars.length)])
-            }
-            id = id.join("");
-            product.ratings.push({
-                userId: id,
-                rate: rate
-            })
-            console.log("filter");
-        } else {
-            console.log("no product to rate")
-        }
-    })
-};
+// const rateProduct = (name, rate) => {
+//     products.forEach(product => {
+//         if (product.name.toLowerCase().includes(name)) {
+//             let chars = "0123456789abcdefghiklmnopqrstuvwxyz";
+//             let id = [];
+//             for (let i = 0; i < 6; i++) {
+//                 id.push(chars[Math.floor(Math.random() * chars.length)])
+//             }
+//             id = id.join("");
+//             product.ratings.push({
+//                 userId: id,
+//                 rate: rate
+//             })
+//             console.log("filter");
+//         } else {
+//             console.log("no product to rate")
+//         }
+//     })
+// };
 
-const avgRating = (name) => {
-    let avg = 0;
-    let count = 0;
-    for (let i = 0; i < products.length; i++) {
-        if (name.toLowerCase() === products[i].name.toLowerCase()) {
-            products[i].ratings.rate.forEach(rating => {
-                count++
-                avg += rating
-            })
-        }
-    }
-    avg = avg / count
-}
+// const avgRating = (name) => {
+//     let avg = 0;
+//     let count = 0;
+//     for (let i = 0; i < products.length; i++) {
+//         if (name.toLowerCase() === products[i].name.toLowerCase()) {
+//             products[i].ratings.rate.forEach(rating => {
+//                 count++
+//                 avg += rating
+//             })
+//         }
+//     }
+//     avg = avg / count
+// }
 /* *************************************************************************************** */
+console.log("///////////////////////////////////////////////////////////////////////////")
 
 // ****** 4- Create a function called likeProduct. This function will helps to like to the product if it is not liked and remove like if it was liked ****** //
 
@@ -324,6 +325,6 @@ const likeProduct = (name) => {
         }
     }
 }
-rateProduct("tv", "4.5");
-avgRating("mobile phone");
-likeProduct("mobile phone");
+// rateProduct("tv", "4.5");
+// avgRating("mobile phone");
+// likeProduct("mobile phone");

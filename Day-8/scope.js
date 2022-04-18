@@ -12,7 +12,6 @@ function letsLearnScope() {
 letsLearnScope()
 console.log(a, b) // JavaScript 10
 /* *************************************************************************************** */
-
 console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** Global Scope ****** //
@@ -32,7 +31,6 @@ function LearnScope() {
 LearnScope()
 console.log(c, d) // Java 20
 /* *************************************************************************************** */
-
 console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** Local Scope ****** //
@@ -57,20 +55,19 @@ function letsScope() {
 letsScope()
 console.log(e, f) // Script 30
 /* *************************************************************************************** */
-
 console.log("////////////////////////////////////////////////////////////////////////////")
 
 function Scope() {
     const gravity1 = 9.81
     console.log(gravity1)
 }
-// console.log(gravity), Uncaught ReferenceError: gravity is not defined
+// console.log(gravity1), Uncaught ReferenceError: gravity is not defined
 
 if (true) {
     const gravity2 = 9.81
     console.log(gravity2) // 9.81
 }
-// console.log(gravity), Uncaught ReferenceError: gravity is not defined
+// console.log(gravity2), Uncaught ReferenceError: gravity is not defined
 
 for (let i = 0; i < 3; i++) {
     console.log(i) // 0, 1, 2
