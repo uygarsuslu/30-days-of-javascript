@@ -10,6 +10,7 @@ else {
 }
 
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // Compare the values of myAge and yourAge using if … else. Based on the comparison and log the result to console stating who is older (me or you). Use prompt(“Enter your age:”) to get the age as input. //
 
@@ -20,6 +21,7 @@ let difference = Math.abs(myAge - yourAge)
 myAge > yourAge ? console.log(`i am ${difference} years older than you`) : console.log(`you are ${difference} years older than me`)
 
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // Even numbers are divisible by 2 and the remainder is zero. How do you check, if a number is even or not using JavaScript? //
 
@@ -33,6 +35,7 @@ else {
 }
 
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // Write a code which can give grades to students according to theirs scores //
 
@@ -46,6 +49,7 @@ else if (note >= 80 && note <= 100) { console.log("A") }
 else { console.log("Entered value was not a number") }
 
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // Check if the season is Autumn, Winter, Spring or Summer. If the user input is //
 
@@ -68,6 +72,7 @@ else {
 }
 
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 var dt = new Date();
 var month1 = dt.getMonth() + 1;
