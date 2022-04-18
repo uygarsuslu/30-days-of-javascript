@@ -10,4 +10,4 @@ const PI = 3.14
 const GRAVITY = 9.81
 
 console.log(youtubeChannel, channelAge, isChannelStillActive, secondChannel, channelMoney);
-console.log(PI, GRAVITY);
+console.log(PI, GRAVITY); 
