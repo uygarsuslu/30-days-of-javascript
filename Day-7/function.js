@@ -15,6 +15,7 @@ console.log("return:", sayHello2()); // merhaba dünya
 let hello9 = sayHello2()
 console.log("fonksiyon return alınca:", hello9); // merhaba dünya => fonksiyon return döndüğü için
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** Function with a parameter ****** //
 
@@ -28,6 +29,7 @@ function printFullName(firstName, lastName) {
 }
 console.log("string parametre:", printFullName('Uygar', 'Süslü')) // Uygar Süslü
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** Function with many parameters ****** //
 
@@ -41,6 +43,7 @@ function sumArrayValues(array) {
 let dizi = [2, 4, 6, 8, 10]
 console.log("toplam:", sumArrayValues(dizi)); // 30
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** Function with unlimited number of parameters ****** //
 
@@ -54,6 +57,7 @@ function topla() {
 }
 console.log("arguments:", topla(1, 2, 3, 4, 5)) // 15
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** Unlimited number of parameters in arrow function ****** //
 
@@ -67,6 +71,7 @@ const sumAllNums2 = (...args) => {
 }
 console.log("...args:", sumAllNums2(1, 2, 3, 4)) // 10
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** Anonymous Function ****** //
 
@@ -91,6 +96,7 @@ console.log("boş anonim foknsiyon:", sayHi2()); // hello
     console.log("kendi kendini çağıran fonksiyon-2:", "he yo!"); // he yo!
 })();
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** Arrow Function ****** //
 
@@ -120,6 +126,7 @@ hello5() // tek parametreli işlemlerde parantez "()" kullanmaya gerek yok !!!!!
 const hello6 = name => `hello ${name}`
 console.log(hello6("Gökalp"))
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** Unlimited number of parameters in arrow function ****** //
 
@@ -138,6 +145,7 @@ const sumAllNums = (...args) => {
 }
 console.log("...args:", sumAllNums(1, 2, 3, 4)) // 10
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** Function with default parameters ****** //
 
@@ -153,6 +161,7 @@ function greetings(name = 'Peter') {
 console.log(greetings()) // Peter, welcome to 30 Days Of JavaScript!
 console.log(greetings('Uygar')) // Uygar, welcome to 30 Days Of JavaScript!
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** call vs. invoke ****** //
 

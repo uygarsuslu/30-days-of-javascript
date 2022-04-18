@@ -5,6 +5,7 @@ function fullName(firstName, lastName) {
 }
 console.log(fullName("Uygar", "Süslü"));
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 3- Declare a function addNumbers and it takes two two parameters and it returns sum ****** //
 
@@ -13,6 +14,7 @@ function addNumbers(num1, num2) {
 }
 console.log(addNumbers(5, 4));
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 4- An area of a rectangle is calculated as follows: area = length x width. Write a function which calculates areaOfRectangle ****** //
 
@@ -22,6 +24,7 @@ function areaOfRectangle(length, width) {
 }
 console.log(areaOfRectangle(5, 8));
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 5- A perimeter of a rectangle is calculated as follows: perimeter= 2x(length + width). Write a function which calculates perimeterOfRectangle ****** //
 
@@ -31,6 +34,7 @@ function perimeterOfRectangle(length, width) {
 }
 console.log(perimeterOfRectangle(5, 8));
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 6- A volume of a rectangular prism is calculated as follows: volume = length x width x height. Write a function which calculates volumeOfRectPrism ****** //
 
@@ -40,6 +44,7 @@ function volumeOfRectPrism(length, width, height) {
 }
 console.log(volumeOfRectPrism(5, 7, 2));
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 7- Area of a circle is calculated as follows: area = π x r x r. Write a function which calculates areaOfCircle ****** //
 
@@ -50,6 +55,7 @@ function areaOfCircle(r) {
 }
 console.log(areaOfCircle(6));
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 8- Circumference of a circle is calculated as follows: circumference = 2πr. Write a function which calculates circumOfCircle ****** //
 
@@ -60,6 +66,7 @@ function circumOfCircle(r) {
 }
 console.log(circumOfCircle(6));
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 9- Density of a substance is calculated as follows:density= mass/volume. Write a function which calculates density ****** //
 
@@ -68,6 +75,7 @@ function density(mass, volume) {
 }
 console.log(density(20, 4));
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 11- Weight of a substance is calculated as follows: weight = mass x gravity. Write a function which calculates weight ****** //
 
@@ -76,6 +84,7 @@ function weight(mass, gravity) {
 }
 console.log(weight(20, 4));
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 12- Temperature in oC can be converted to oF using this formula: oF = (oC x 9/5) + 32. Write a function which convert oC to oF convertCelsiusToFahrenheit ****** //
 
@@ -85,6 +94,7 @@ function convertCelsiusToFahrenheit(celsius) {
 }
 console.log(convertCelsiusToFahrenheit(20));
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 13- Body mass index(BMI) is calculated as follows: bmi = weight in Kg / (height x height) in m2. Write a function which calculates bmi. BMI is used to broadly define different weight groups in adults 20 years old or older.Check if a person is underweight, normal, overweight or obese based the information given below ****** //
 
@@ -97,6 +107,7 @@ function BMI(weight, height) {
 }
 console.log(BMI(90, 1.80));
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 14- Write a function called checkSeason, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer ****** //
 
@@ -128,6 +139,7 @@ function checkSeason(month) {
 }
 checkSeason("june")
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 15- Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method ****** //
 
@@ -136,6 +148,7 @@ function findMax(x, y, z) {
 }
 console.log(findMax(4, 8, 1))
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 3- Declare a function name printArr It takes array as a parameter and it prints out each value of the array ****** //
 
@@ -146,6 +159,7 @@ printArr = (arr) => {
 }
 printArr([3, 4, 5])
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 4- Write a function name showDateTime which shows time in this format: 08/01/2020 04:08 using the Date object ****** //
 
@@ -160,6 +174,7 @@ function showDateTime() {
 }
 console.log(showDateTime())
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 5- Declare a function name swapValues. This function swaps value of x to y ****** //
 
@@ -170,6 +185,7 @@ function swapValues(a, b) {
 }
 swapValues(2, 4)
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 6- Declare a function name reverseArray. It takes array as a parameter and it returns the reverse of the array (don't use method) ****** //
 
@@ -182,6 +198,7 @@ function reverseArray(arr) {
 }
 reverseArray([2, 3, 4])
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 7- Declare a function name capitalizeArray. It takes array as a parameter and it returns the - capitalizedarray ****** //
 
@@ -194,6 +211,7 @@ function capitalizeArray(arr) {
 }
 console.log(capitalizeArray(["uygar", "süslü"]))
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 9- Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item ****** //
 
@@ -204,6 +222,7 @@ removeitem = (index) => {
 }
 console.log(removeitem(1))
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 10- Declare a function name sumOfNumbers. It takes a number parameter and it adds all the numbers in that range ****** //
 
@@ -216,6 +235,7 @@ sumOfNumbers = (...args) => {
 }
 console.log(sumOfNumbers(1, 2, 3, 4, 5))
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 13- Declare a function name evensAndOdds . It takes a positive integer as parameter and it counts number of evens and odds in the number ****** //
 
@@ -232,6 +252,7 @@ evensAndOdds = (num) => {
 }
 console.log(evensAndOdds(100))
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 15- Writ a function which generates a randomUserIp ****** //
 
@@ -244,6 +265,7 @@ randomUserIp = () => {
 }
 console.log(randomUserIp())
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 17- Declare a function name randomHexaNumberGenerator. When this function is called it generates a random hexadecimal number. The function return the hexadecimal number ****** //
 
@@ -257,6 +279,7 @@ randomHexaNumberGenerator = () => {
 }
 console.log(randomHexaNumberGenerator())
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 1- Modify the userIdGenerator function. Declare a function name userIdGeneratedByUser. It doesn’t take any parameter but it takes two inputs using prompt(). One of the input is the number of characters and the second input is the number of ids which are supposed to be generated ****** //
 
@@ -277,6 +300,7 @@ console.log(randomHexaNumberGenerator())
 // }
 // userIdGeneratedByUser();
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 3- Write a function arrayOfHexaColors which return any number of hexadecimal colors in an array ****** //
 
@@ -293,6 +317,7 @@ arrayOfHexaColors = () => {
 }
 console.log(arrayOfHexaColors())
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 7- Write a function generateColors which can generate any number of hexa or rgb colors ****** //
 
@@ -319,6 +344,7 @@ generateColors = (type, arrLength) => {
 // console.log(generateColors("hexa", 3))
 console.log(generateColors("rgb", 3))
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 9- Call your function factorial, it takes a whole number as a parameter and it return a factorial of the number ****** //
 
@@ -331,6 +357,7 @@ function factorial(num) {
 }
 console.log(factorial(5));
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 10- Call your function isEmpty, it takes a parameter and it checks if it is empty or not ****** //
 
@@ -343,6 +370,7 @@ function isEmpty(val) {
 console.log(isEmpty());
 console.log(isEmpty("sdfsd"));
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 12- Write a function called sumOfArrayItems, it takes an array parameter and return the sum of all the items. Check if all the array items are number types. If not give return reasonable feedback ****** //
 
@@ -360,6 +388,7 @@ function sumOfArrayItems(arr) {
 }
 console.log(sumOfArrayItems([1, 2, 3]));
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 13- Write a function called average, it takes an array parameter and returns the average of the items. Check if all the array items are number types. If not give return reasonable feedback ****** //
 
@@ -377,6 +406,7 @@ average = (arr) => {
 }
 console.log(average([1, 2, 3]))
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 15- Write a function called isPrime, which checks if a number is prime number ****** //
 
@@ -392,6 +422,7 @@ function isPrime(num) {
 }
 console.log(isPrime(10))
 /* *************************************************************************************** */
+console.log("////////////////////////////////////////////////////////////////////////////")
 
 // ****** 20- Write a function called reverseCountries, it takes countries array and first it copy the array and returns the reverse of the original array ****** //
 
